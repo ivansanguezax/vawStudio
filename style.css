@@ -916,7 +916,7 @@ li.social-links a {
 -------------------------------------------------------------------*/
 
 .logos img {
-    margin: auto;
+    margin: auto auto 20px;
     display: block;
     text-align: center;
     width: 100%;

@@ -140,21 +140,18 @@
                 <div class="col-md-8 col-md-offset-2">
                     <div class="contact_form">
                         <div id="message"></div>
-                        <form id="contactform" class="row" action="contact.php" name="contactform" method="post">
+                        <form class="row" action="contact.php" name="contactform" method="post">
                             <fieldset class="row-fluid">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Nombres">
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Nombres" required>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Apellidos">
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Correo Electronico" required>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="Correo Electronico">
+                                    <input type="text" name="subject" id="subject" class="form-control" placeholder="Asunto">
                                 </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Número de telefono">
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <label class="sr-only">Select Service</label>
                                     <select name="select_service" id="select_service" class="selectpicker form-control" data-style="btn-white">
                                         <option value="12">Sonido Directo</option>
@@ -163,7 +160,7 @@
                                         <option value="Graphic Design">Postproducción</option>
                                         <option value="Others">Others</option>
                                     </select>
-                                </div>
+                                </div> -->
                                 <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> -->
                                     <!-- <label class="sr-only">What is max price?</label> -->
                                     <!-- <select name="select_price" id="select_price" class="selectpicker form-control" data-style="btn-white"> -->
@@ -173,10 +170,10 @@
                                     <!-- </select> -->
                                 <!-- </div> -->
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Brindanos más detalles..."></textarea>
+                                    <textarea class="form-control" name="message" id="message" rows="6" placeholder="Brindanos más detalles..."></textarea>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
-                                    <button type="submit" value="SEND" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block">Enviar</button>
+                                    <button  class="btn btn-light btn-radius btn-brd grd1 btn-block">Enviar</button>
                                 </div>
                             </fieldset>
                         </form>
@@ -186,7 +183,8 @@
 			
 			<div class="row">
 				<div class="col-md-offset-1 col-sm-10 col-md-10 col-sm-offset-1 pd-add">
-					<div class="address-item">
+                    <a href="https://g.page/VAWEstudio?share">
+                    <div class="address-item">
 						<div class="address-icon">
 							<i class="icon icon-location2"></i>
 						</div>
@@ -195,13 +193,13 @@
  
 							<br> Ciudad de México, CDMX</p>
 					</div>
+                </a>
 					<div class="address-item">
 						<div class="address-icon">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 						</div>
 						<h3>Correo Electronico</h3>
 						<p>contacto@vawestudio.mx
-							<br>contacto@vawestudio.mx
                         </p>
 					</div>
 					<div class="address-item">
@@ -209,8 +207,7 @@
 							<i class="icon icon-headphones"></i>
 						</div>
 						<h3>Telefono</h3>
-						<p>+52 1 55 7950 1151
-							<br>+52 1 55 7950 1151</p>
+						<p>+52 1 55 7950 1151</p>
 					</div>
 				</div>
 			</div><!-- end row -->
@@ -235,12 +232,12 @@
 				<div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="widget clearfix">
                         <div class="widget-title">
-                            <h3>Pages</h3>
+                            <h3>Páginas</h3>
                         </div>
 
                         <ul class="footer-links hov">
                             <li><a href="index.html">Inicio <span class="icon icon-arrow-right2"></span></a></li>
-							<!-- <li><a href="about-us.html">Sobre Nosotros <span class="icon icon-arrow-right2"></span></a></li> -->
+							<li><a href="about-us.html">Sobre Nosotros <span class="icon icon-arrow-right2"></span></a></li>
 							<li><a href="services.html">Servicios <span class="icon icon-arrow-right2"></span></a></li>
 							<li><a href="portfolio.html">Portafolio<span class="icon icon-arrow-right2"></span></a></li>
 							<li><a href="features.html">Dolby Atmos<span class="icon icon-arrow-right2"></span></a></li>
